@@ -5,6 +5,7 @@ const mongoose = require("../db/connection");
 const TripSchema = new mongoose.Schema({
   trip: String,
   restaurant: String,
+  type: String,
   website: String
 });
 

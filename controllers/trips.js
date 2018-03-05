@@ -10,4 +10,11 @@ router.get("/", (req, res) => {
   });
 });
 
+//load details of each individual trip
+router.get("/:id", (req, res) => {
+  Trip.findOne({ _id: req.params.id }).then(trips => {
+    res.render("trips/show", trips);
+  });
+});
+
 module.exports = router;

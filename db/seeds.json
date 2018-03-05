@@ -2,21 +2,25 @@
   {
     "trip": "San Diego",
     "restaurant": "Officine Buona Forchetta",
+    "type": "Italian",
     "website": "http://www.officinebuonaforchetta.com/"
   },
   {
     "trip": "San Diego",
     "restaurant": "Night & Day Cafe",
+    "type": "Mexican",
     "website": "https://www.coronadondcafe.com/"
   },
   {
     "trip": "San Diego",
     "restaurant": "La Vecindad",
+    "type": "Mexican",
     "website": "http://www.lavecindadneighborhoodtacos.com/"
   },
   {
     "trip": "San Diego",
     "restaurant": "Half Door Brewing Co.",
+    "type": "American",
     "website": "http://www.halfdoorbrewing.com/"
   }
 ]

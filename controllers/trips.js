@@ -10,10 +10,27 @@ router.get("/", (req, res) => {
   });
 });
 
+//create a new trip
+router.get("/new", (req, res) => {
+  res.render("trips/new");
+});
+
 //load details of each individual trip
 router.get("/:id", (req, res) => {
   Trip.findOne({ _id: req.params.id }).then(trips => {
     res.render("trips/show", trips);
+  });
+});
+
+//creating the new trip
+router.post("/", (req, res) => {
+  Trip.create({
+    trip: req.body.trip,
+    restaurant: req.body.restaurant,
+    type: req.body.type,
+    website: req.body.website
+  }).then(trips => {
+    res.redirect("/trips");
   });
 });
 

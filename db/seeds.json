@@ -1,0 +1,22 @@
+[
+  {
+    "trip": "San Diego",
+    "restaurant": "Officine Buona Forchetta",
+    "website": "http://www.officinebuonaforchetta.com/"
+  },
+  {
+    "trip": "San Diego",
+    "restaurant": "Night & Day Cafe",
+    "website": "https://www.coronadondcafe.com/"
+  },
+  {
+    "trip": "San Diego",
+    "restaurant": "La Vecindad",
+    "website": "http://www.lavecindadneighborhoodtacos.com/"
+  },
+  {
+    "trip": "San Diego",
+    "restaurant": "Half Door Brewing Co.",
+    "website": "http://www.halfdoorbrewing.com/"
+  }
+]

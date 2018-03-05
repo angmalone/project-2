@@ -1,0 +1,9 @@
+<h1> Locations </h1>
+
+<ul>
+    {{#each trips}}
+    <li>
+        <a href="/trips/{{this.id}}">{{this.trip}}</a>
+    </li>
+    {{/each}}
+</ul>

@@ -3,6 +3,22 @@ const mongoose = require("../db/connection");
 
 //create schema
 const TripSchema = new mongoose.Schema({
+  trip: String,
+  restaurant: String,
+  website: String
+});
+
+const Trip = mongoose.model("Trip", TripSchema);
+
+module.exports = Trip;
+
+/***
+
+//connect to database
+const mongoose = require("../db/connection");
+
+//create schema
+const TripSchema = new mongoose.Schema({
   name: String,
   restaurants: [{ type: Schema.Types.ObjectId, ref: "Restaurant" }],
   places: [{ type: Schema.Types.ObjectId, ref: "Place" }]
@@ -31,3 +47,5 @@ const Place = mongoose.model("Place", PlaceSchema);
 module.exports = Trip;
 module.exports = Restaurant;
 module.exports = Place;
+
+***/

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/angmalone/project-2#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "hbs": "^4.0.1",
     "mongoose": "^5.0.8"
   }
 }

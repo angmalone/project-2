@@ -4,6 +4,8 @@
 <p>Type: {{this.type}}</p>
 {{this.notes}}
 
+<a href="/trips/edit/{{id}}">Edit</a>
+
 <form action="/trips/{{id}}?_method=delete" method="POST">
-    <input type="submit" value="Remove Item">
+    <input type="submit" value="Remove">
 </form>

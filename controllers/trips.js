@@ -22,6 +22,21 @@ router.get("/:id", (req, res) => {
   });
 });
 
+//editing
+router.get("/edit/:id", (req, res) => {
+  Trip.findOne({ _id: req.params.id }).then(trips => {
+    res.render("trips/edit", trips);
+  });
+});
+
+router.put("/:id", (req, res) => {
+  Trip.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true }).then(
+    trips => {
+      res.redirect("/trips");
+    }
+  );
+});
+
 //deleting a trip
 router.delete("/:id", (req, res) => {
   Trip.findOneAndRemove({ _id: req.params.id }).then(() => {

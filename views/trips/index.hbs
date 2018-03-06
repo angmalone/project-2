@@ -4,9 +4,10 @@
     {{#each trips}}
     <li>
         <a href="/trips/{{this.id}}">{{this.name}}</a>
-        </br>{{this.location}} || {{this.type}}
+        </br>{{this.location}} ||
+        <em>{{this.type}}</em>
     </li>
     {{/each}}
 </ul>
 
-<a href="/trips/new/">Add a New Point of Interest</a>
+<button type="button" onclick="location.href = '/trips/new/';">+ Add a New Point of Interest</button>

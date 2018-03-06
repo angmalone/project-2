@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
   });
 });
 
-//editing
+//editing the details
 router.get("/edit/:id", (req, res) => {
   Trip.findOne({ _id: req.params.id }).then(trips => {
     res.render("trips/edit", trips);

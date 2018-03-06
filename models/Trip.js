@@ -3,10 +3,11 @@ const mongoose = require("../db/connection");
 
 //create schema
 const TripSchema = new mongoose.Schema({
-  trip: String,
-  restaurant: String,
-  type: String,
-  website: String
+  location: String,
+  name: String,
+  website: String,
+  notes: String,
+  type: String
 });
 
 const Trip = mongoose.model("Trip", TripSchema);

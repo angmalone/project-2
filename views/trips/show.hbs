@@ -1,4 +1,9 @@
-<h1>{{this.trip}}</h1>
-<h2>{{this.restaurant}}</h2>
-<p>Type: {{this.type}}</p>
+<h1>{{this.name}}</h1>
 <a href="{{this.website}}">Visit Site</a>
+<h2>{{this.location}}</h2>
+<p>Type: {{this.type}}</p>
+{{this.notes}}
+
+<form action="/trips/{{id}}?_method=delete" method="POST">
+    <input type="submit" value="Remove Item">
+</form>

@@ -22,6 +22,13 @@ router.get("/:id", (req, res) => {
   });
 });
 
+//deleting a trip
+router.delete("/:id", (req, res) => {
+  Trip.findOneAndRemove({ _id: req.params.id }).then(() => {
+    res.redirect("/trips");
+  });
+});
+
 //creating the new trip
 router.post("/", (req, res) => {
   Trip.create({

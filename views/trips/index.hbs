@@ -1,9 +1,10 @@
-<h1> Locations </h1>
+<h1> What I Need to Eat, Drink, See and Do </h1>
 
-<ul>
+<ul style="list-style-type:none">
     {{#each trips}}
     <li>
-        <a href="/trips/{{this.id}}">{{this.trip}}</a>
+        <a href="/trips/{{this.id}}">{{this.name}}</a>
+        </br>{{this.location}} || {{this.type}}
     </li>
     {{/each}}
 </ul>

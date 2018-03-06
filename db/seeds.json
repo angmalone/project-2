@@ -1,26 +1,39 @@
 [
   {
-    "trip": "San Diego",
-    "restaurant": "Officine Buona Forchetta",
-    "type": "Italian",
-    "website": "http://www.officinebuonaforchetta.com/"
+    "location": "San Diego",
+    "name": "Night & Day Cafe",
+    "website": "https://www.coronadondcafe.com/",
+    "notes":
+      "Right around the corner from the Hotel Del, can get to the island via ferry. All day breakfast. Try the apple pie.",
+    "type": "Restaurant"
   },
   {
-    "trip": "San Diego",
-    "restaurant": "Night & Day Cafe",
-    "type": "Mexican",
-    "website": "https://www.coronadondcafe.com/"
+    "location": "San Diego",
+    "name": "San Diego Safari Park",
+    "website": "http://sdzsafaripark.org/",
+    "notes": "About 40 minutes outside of downtown San Diego, need rental car",
+    "type": "Place To Go"
   },
   {
-    "trip": "San Diego",
-    "restaurant": "La Vecindad",
-    "type": "Mexican",
-    "website": "http://www.lavecindadneighborhoodtacos.com/"
+    "location": "San Diego",
+    "name": "Mike Hess Brewing",
+    "website": "http://sdzsafaripark.org/",
+    "notes": "locations in Ocean Beach, North Park and Miramar",
+    "type": "Brewery"
   },
   {
-    "trip": "San Diego",
-    "restaurant": "Half Door Brewing Co.",
-    "type": "American",
-    "website": "http://www.halfdoorbrewing.com/"
+    "location": "Chicago",
+    "name": "Chicago Architecture Tour",
+    "website": "https://www.architecture.org/experience-caf/tours/",
+    "notes":
+      "River Cruise Tour is the best for photography. Tours offered in the day and night.",
+    "type": "Thing To Do"
+  },
+  {
+    "location": "Chicago",
+    "name": "Pequod's",
+    "website": "https://pequodspizza.com/",
+    "notes": "Check out Whale Tale nearby during restaurant wait",
+    "type": "Restaurant"
   }
 ]

@@ -2,12 +2,14 @@
 const express = require("express");
 const hbs = require("hbs");
 const bodyParser = require("body-parser");
+const methodOverride = require("method-override");
 const Trip = require("./models/Trip");
 
 //app setup
 const app = express();
 app.set("view engine", "hbs");
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
 
 const tripController = require("./controllers/trips");
 

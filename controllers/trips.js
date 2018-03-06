@@ -32,10 +32,11 @@ router.delete("/:id", (req, res) => {
 //creating the new trip
 router.post("/", (req, res) => {
   Trip.create({
-    trip: req.body.trip,
-    restaurant: req.body.restaurant,
-    type: req.body.type,
-    website: req.body.website
+    location: req.body.location,
+    name: req.body.name,
+    website: req.body.website,
+    notes: req.body.notes,
+    type: req.body.type
   }).then(trips => {
     res.redirect("/trips");
   });

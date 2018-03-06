@@ -1,21 +1,27 @@
-<h1>Add a Trip</h1>
+<h1>Add a Point of Interest</h1>
 
 <form action="/trips" method="POST">
     <p>
-        <label for="trip">Location:</label>
-        <input type="text" name="trip">
+        <label for="location">City:</label>
+        <input type="text" name="location">
     </p>
     <p>
-        <label for="restaurant">Restaurant Name:</label>
-        <input type="text" name="restaurant">
-    </p>
-    <p>
-        <label for="type">Type:</label>
-        <input type="text" name="type">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
     </p>
     <p>
         <label for="website">Website:</label>
         <input type="text" name="website">
     </p>
-    <input type="submit" value="Add Trip">
+    <p>
+        <label for="notes">Notes:</label>
+        <input type="text" name="notes">
+    </p>
+    <select name="type">
+        <option value="Brewery">Brewery</option>
+        <option value="Place to See">Place To See</option>
+        <option value="Restaurant">Restaurant</option>
+        <option value="Thing To Do">Thing To Do</option>
+    </select>
+    <input type="submit" value="Add">
 </form>

@@ -2,9 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 const Trip = require("../models/Trip");
+var sortJsonArray = require("sort-json-array");
 
 //load individual trips
 router.get("/", (req, res) => {
+  sortJsonArray([Trip], "location");
   Trip.find({}).then(trips => {
     res.render("trips/index", { trips });
   });

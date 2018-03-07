@@ -1,13 +1,17 @@
-<h1> Points of Interest </h1>
+<div class="landing">
+    <h1> Points of Interest </h1>
 
-<ul style="list-style-type:none">
-    {{#each trips}}
-    <li class="item">
-        <a href="/trips/{{this.id}}">{{this.name}}</a>
-        </br>{{this.location}} ||
-        <em>{{this.type}}</em>
-    </li>
-    {{/each}}
-</ul>
+    <ul style="list-style-type : none">
+        {{#each trips}}
+        <li class="item">
+            <a href="/trips/{{this.id}}">{{this.name}}</a>
+            </br>{{this.location}} ||
+            <em>{{this.type}}</em>
+        </li>
+        {{/each}}
+    </ul>
 
-<button type="button" onclick="location.href = '/trips/new/';">+ Add a New Point of Interest</button>
+    <form action="/trips/new" method="GET">
+        <input type="submit" value="Add New Point of Interest">
+    </form>
+</div>

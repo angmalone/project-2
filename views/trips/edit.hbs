@@ -1,27 +1,41 @@
-<h1>Edit a Point of Interest</h1>
+<div class="landing">
+    <h1>Edit a Point of Interest</h1>
 
-<form action="/trips/{{id}}?_method=put" method="POST">
-    <p>
-        <label for="location">City:</label>
-        <input type="text" value="{{this.location}}" name="location">
-    </p>
-    <p>
-        <label for="name">Name:</label>
-        <input type="text" value="{{this.name}}" name="name">
-    </p>
-    <p>
-        <label for="website">Website:</label>
-        <input type="text" value="{{this.website}}" name="website">
-    </p>
-    <p>
-        <label for="notes">Notes:</label>
-        <input type="text" value="{{this.notes}}" name="notes">
-    </p>
-    <select name="type">
-        <option value="Brewery">Brewery</option>
-        <option value="Place to See">Place To See</option>
-        <option value="Restaurant">Restaurant</option>
-        <option value="Thing To Do">Thing To Do</option>
-    </select>
-    <input type="submit" value="Edit">
-</form>
+    <form action="/trips/{{id}}?_method=put" method="POST">
+        <p>
+            <label for="location">City*:</label>
+            <input type="text" value="{{this.location}}" name="location">
+        </p>
+        <p>
+            <label for="name">Name*:</label>
+            <input type="text" value="{{this.name}}" name="name">
+        </p>
+        <p>
+            <label for="website">Website:</label>
+            <input type="text" value="{{this.website}}" name="website">
+        </p>
+        <p>
+            <label for="notes">Notes:</label>
+            <input type="text" value="{{this.notes}}" name="notes">
+        </p>
+        <div>
+            <input type="radio" name="type" value="Brewery">
+            <label>Brewery</label>
+
+            <input type="radio" name="type" value="Cafe">
+            <label>Cafe</label>
+
+            <input type="radio" name="type" value="Place to See">
+            <label>Place to See</label>
+            <br>
+            <input type="radio" name="type" value="Restaurant">
+            <label>Restaurant</label>
+
+            <input type="radio" name="type" value="Thing to Do">
+            <label>Thing to Do</label>
+            <br>
+        </div>
+        <br>
+        <input type="submit" value="Edit">
+    </form>
+</div>

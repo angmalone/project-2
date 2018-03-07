@@ -8,6 +8,7 @@ var sortJsonArray = require("sort-json-array");
 router.get("/", (req, res) => {
   sortJsonArray([Trip], "location");
   Trip.find({}).then(trips => {
+    sortJsonArray(trips, "location", "asc");
     res.render("trips/index", { trips });
   });
 });

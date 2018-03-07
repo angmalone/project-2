@@ -16,6 +16,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
 h1,
 h2,
 h3 {
@@ -28,16 +32,20 @@ h3 {
 p {
   font-family: "Lato", sans-serif;
   font-weight: 700i;
+  color: white;
+  letter-spacing: 2px;
 }
 a {
-  color: black;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 li {
   margin: 20px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  color: white;
 }
 form {
   font-family: "Poppins", sans-serif;
@@ -55,4 +63,21 @@ select {
   width: 65%;
   text-align: center;
   margin: 0 auto;
+}
+input[type="text"] {
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: solid 3px white;
+  caret-color: white;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  width: 450px;
+}
+input:focus {
+  outline: none;
 }

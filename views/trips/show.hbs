@@ -8,7 +8,6 @@
     <a href="{{this.website}}" target="_blank">Visit Site</a>
     <p>Notes: {{this.notes}}</p>
     <br>
-    <br>
     <!--<a href="/trips/edit/{{id}}">Edit</a>-->
 
     <form action="/trips/edit/{{id}}" method="GET">
@@ -17,4 +16,7 @@
     <form onsubmit="confirmDelete()" action="/trips/{{id}}?_method=delete" method="POST">
         <input type="submit" value="Remove">
     </form>
+    <br>
+    <br>
+    <a class="home" href="/trips">⟵ Index</a>
 </div>

@@ -12,7 +12,7 @@
     <form action="/trips/edit/{{id}}" method="GET">
         <input type="submit" value="Edit">
     </form>
-    <form onsubmit="confirmDelete()" action="/trips/{{id}}?_method=delete" method="POST">
+    <form onsubmit="return confirmDelete()" method="POST" action="/trips/{{id}}?_method=delete">
         <input type="submit" value="Remove">
     </form>
     <br>

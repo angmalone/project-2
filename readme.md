@@ -16,16 +16,11 @@ A simple trivia game about the 2nd best player on the Cleveland Cavaliers, Kevin
 
 ## Approach Taken:
 
-I had an immediate vision for the design/layout so I did that first and focused on the Javascript after that. I initially was going to put all the questions on one page but it would be a lot less cluttered if I cycled through the questions.
+I thought of the app with me and my friends in mind. We always find interesting places to check out whenever we're planning on traveling but I tend to have links and notes everywhere between post-its, my phone and in my email. So, I thought it would be cool to have an app have everything in one place.
 
-My initial goals were:
+My initial vision was to create a trip, and inside of the trip you could add restaurants and places to go. I was having some difficulty in so for the sake of time, I decided to switch gears and make things simpler, but still organized. I decided to sort each individual entry by location to keep everything grouped together.
 
-1.  Create the template for the quiz with HTML/CSS
-2.  Get the text from the first set of questions/answers in the template with Javascript
-3.  Check the selected answer against the actual answer and alert if it's correct or incorrect
-4.  Change questions/answers once the selected answer is checked
-
-Once I finished those, I ended up adjusting styling, changing content, adding a counter and removing the alert by allowing the counter to display if the selected answer was wrong.
+For the design, I wanted to keep things clean and simple but still visually appealing.
 
 ## Installation Instructions:
 
@@ -33,7 +28,7 @@ None, app loads in the browser
 
 ## Unsolved Problems:
 
-The project works, but I didn't get to build it the way I originally wanted to so I want to go back and try again!
+The project works, but I didn't get to build it the way I originally wanted to so I want to go back and try again on my own time!
 
 ## Credits:
 

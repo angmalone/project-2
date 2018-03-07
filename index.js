@@ -6,7 +6,6 @@ const methodOverride = require("method-override");
 const Trip = require("./models/Trip");
 const path = require("path");
 var sortJsonArray = require("sort-json-array");
-const data = require("./db/seeds.json");
 
 //app setup
 const app = express();
@@ -16,7 +15,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
 const tripController = require("./controllers/trips");
-console.log(sortJsonArray(data, "location", "asc"));
 
 //route definition
 app.get("/", (req, res) => {

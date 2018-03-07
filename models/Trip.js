@@ -7,7 +7,8 @@ const TripSchema = new mongoose.Schema({
   name: String,
   website: String,
   notes: String,
-  type: String
+  type: String,
+  instagram: String
 });
 
 const Trip = mongoose.model("Trip", TripSchema);

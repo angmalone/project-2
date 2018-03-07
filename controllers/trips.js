@@ -6,7 +6,6 @@ var sortJsonArray = require("sort-json-array");
 
 //load individual trips
 router.get("/", (req, res) => {
-  sortJsonArray([Trip], "location");
   Trip.find({}).then(trips => {
     sortJsonArray(trips, "location", "asc");
     res.render("trips/index", { trips });
@@ -21,6 +20,7 @@ router.get("/new", (req, res) => {
 //load details of each individual trip
 router.get("/:id", (req, res) => {
   Trip.findOne({ _id: req.params.id }).then(trips => {
+    checkInstagram();
     res.render("trips/show", trips);
   });
 });

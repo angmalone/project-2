@@ -19,7 +19,8 @@
     "name": "Mike Hess Brewing",
     "website": "http://sdzsafaripark.org/",
     "notes": "locations in Ocean Beach, North Park and Miramar",
-    "type": "Brewery"
+    "type": "Brewery",
+    "instagram": ""
   },
   {
     "location": "Chicago",
@@ -33,7 +34,8 @@
     "location": "Chicago",
     "name": "Pequod's",
     "website": "https://pequodspizza.com/",
-    "notes": "Check out Whale Tale nearby during restaurant wait",
-    "type": "Restaurant"
+    "notes": "WAY better than Giordano's",
+    "type": "Restaurant",
+    "instagram": "https://www.instagram.com/pequodspizza/"
   }
 ]

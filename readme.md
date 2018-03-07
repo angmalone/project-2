@@ -33,7 +33,7 @@ None, app loads in the browser
 
 ## Unsolved Problems:
 
-There aren't any problems with the submitted project. However, I wanted to add a "Try Again" button at the end that takes the user back to the beginning but it wasn't working out.
+The project works, but I didn't get to build it the way I originally wanted to so I want to go back and try again!
 
 ## Credits:
 

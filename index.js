@@ -26,4 +26,10 @@ app.get("/", (req, res) => {
 app.use("/trips", tripController);
 
 //check server connection
-app.listen(3000, () => console.log("hi this works"));
+//app.listen(3000, () => console.log("hi this works"));
+
+app.set("port", process.env.PORT || 3001);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});

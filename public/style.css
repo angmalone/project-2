@@ -1,5 +1,4 @@
 body {
-  /*gradient 061 from webgradients.com*/
   background-image: linear-gradient(
     to top,
     #3f51b1 0%,
@@ -61,7 +60,6 @@ select {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  /*border: none;*/
 }
 .landing {
   width: 65%;

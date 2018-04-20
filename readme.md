@@ -2,7 +2,7 @@
 
 # Full Stack Web Application: _[Wanderlist](https://the-wanderlist.herokuapp.com/)_
 
-A simple trivia game about the 2nd best player on the Cleveland Cavaliers, Kevin Love. The game starts when the browser loads and the player selects their answer, submits it, and is directed to the next question where they will be informed if their guess is right or wrong.
+
 
 ## Technologies Used:
 
